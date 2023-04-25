@@ -4,7 +4,11 @@ const app = express();
 
 const PORT = 1300;
 
-const CONNECTION_URL = "mongodb+srv://test:test@cluster0.wmpaxgm.mongodb.net/?retryWrites=true&w=majority"; // for non-dockerized app
+const CONNECTION_URL = "mongodb+srv://test:test@cluster0.wmpaxgm.mongodb.net/?retryWrites=true&w=majority"; 
+
+
+
+//code to connect to the mongo db
 mongoose
   .connect(CONNECTION_URL)
   .then(() => {
