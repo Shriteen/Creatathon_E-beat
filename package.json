@@ -1,0 +1,26 @@
+{
+  "type":"module",
+  "name": "creatathon_e-beat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shriteen/Creatathon_E-beat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shriteen/Creatathon_E-beat/issues"
+  },
+  "homepage": "https://github.com/Shriteen/Creatathon_E-beat#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.5",
+    "nodemon": "^2.0.22"
+  }
+}
