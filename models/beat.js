@@ -5,7 +5,8 @@ const beatSchema = new Schema({
     name: {type: String, required: true},
     station:{
         type: Schema.Types.ObjectId,
-        ref: 'Station'
+        ref: 'Station',
+	required: true
     },
     city: String,
     state: String,
