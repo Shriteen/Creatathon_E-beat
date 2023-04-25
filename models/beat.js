@@ -2,11 +2,10 @@ import mongoose from "mongoose";
 const {Schema} = mongoose
 
 const beatSchema = new Schema({
-    name: String,
-    address: String,
-    subdivision:{
+    name: {type: String, required: true},
+    station:{
         type: Schema.Types.ObjectId,
-        ref: 'Subdivision'
+        ref: 'Station'
     },
     city: String,
     state: String,

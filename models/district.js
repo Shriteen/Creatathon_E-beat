@@ -2,8 +2,7 @@ import mongoose from "mongoose";
 const {Schema} = mongoose
 
 const districtSchema = new Schema({
-    name: String,
-    address: String,
+    name: {type: String, required: true}
 })
 
 const district = mongoose.model('District', districtSchema)
