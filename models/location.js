@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-const {Schema} = mongoose
+const {Schema} = mongoose;
 
 const locationSchema = new Schema({
     name: {type: String, required: true },
@@ -9,7 +9,7 @@ const locationSchema = new Schema({
 	required: true
     },
     locationType: {type: String, required: true}
-})
+},{ strict: false });
 
-const location = mongoose.model('Location', locationSchema)
-module.exports = location
+const location = mongoose.model('Location', locationSchema);
+export default location;
